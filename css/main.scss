@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "pantonextrabold";
+    src: url("../font/panton-extrabold-webfont.woff2") format("woff2"),
+        url("../font/panton-extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "pantonlight";
+    src: url("../font/panton-light-webfont.woff2") format("woff2"),
+        url("../font/panton-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary-color: #f8951d;
+$text-color: #333333;
+$light-grey: #c2c2c2;
+
+$font-bold: "pantonextrabold";
+$font-light: "pantonlight";
+$font-text: "Aleo", serif;
+
+.light {
+    font-family: $font-light;
+}
+.heavy {
+    font-family: $font-bold;
+}
+
+.posL {
+    position: relative;
+    left: -5rem;
+}
+
+.posR {
+    position: relative;
+    right: -5rem;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: $font-bold;
+    font-size: 4rem;
+}
+
+h2 {
+    span:nth-of-type(1) {
+        font-family: $font-light;
+    }
+}
+
+h3 {
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.underline {
+    font-family: $font-text;
+    font-size: 0.85rem;
+}
+
+p,
+.link {
+    font-family: $font-text;
+}
+
+.heroRight {
+    background: $primary-color;
+}
+
+#naviRow {
+    height: 4rem;
+    position: absolute;
+    z-index: 10;
+}
+
+.shadow {
+    transition: all ease-in-out 250ms;
+}
+
+.hMain {
+    // height: calc(100% - 4rem) !important;
+    height: 100%;
+}
+
+.link {
+    margin-right: 3rem;
+}
+
+.smLink {
+    margin-right: 1rem;
+}
+
+.hide {
+    transform: scale(0);
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    border-bottom: solid thin $text-color;
+}
+
+#logo {
+    width: 50px;
+    position: relative;
+    top: 7px;
+}
+
+.footer {
+    background: #333333;
+    height: 4rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+#content-wrap {
+    height: 100vh;
+    padding-bottom: 4rem; /* Footer height */
+}
+
+// #about {
+//     padding-top: 6rem;
+// }
+
+.aboutgrid {
+    div {
+        cursor: pointer;
+    }
+}
+
+.btns {
+    border: solid thin $text-color;
+    padding: 1rem 2rem;
+    font-family: $font-text;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+}
+
+.pt-8 {
+    padding-top: 8rem;
+}
+
+.btns:hover {
+}
+
+#h1L {
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+
+#h1R {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem; /* Footer height */
+    margin: 0;
+    color: $light-grey;
+    .container > .row > .col > .wrapper > span {
+        margin-right: 1rem;
+        font-family: $font-text;
+        font-size: 0.75rem;
+    }
+}
+
+.slide-in-elliptic-left-fwd {
+    animation: slide-in-elliptic-left-fwd 0.7s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-right {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.slide-out-blurred-bottom {
+    animation: slide-out-blurred-bottom 0.45s
+        cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
+}
+
+.scale-in-center {
+    visibility: visible;
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-elliptic-left-fwd {
+    0% {
+        transform: translateX(-800px) rotateY(30deg) scale(0);
+        transform-origin: -100% 50%;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotateY(0) scale(1);
+        transform-origin: 1800px 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes slide-out-blurred-bottom {
+    0% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1000px) scaleY(2) scaleX(0.2);
+        transform-origin: 50% 100%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
