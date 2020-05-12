@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+.orange {
+  background-color: #f8951d;
+}
+
 .light {
   font-family: "pantonlight";
 }
@@ -78,8 +82,27 @@ p,
   transition: all ease-in-out 250ms;
 }
 
-.hMain {
-  height: 100%;
+.next {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  background: lightgray;
+  height: 4rem;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home,
+#home > .row {
+  height: calc(100vh - 4rem);
 }
 
 .link {
@@ -88,6 +111,26 @@ p,
 
 .smLink {
   margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#popup {
+  position: fixed;
+  width: 20rem;
+  min-height: 10rem;
+  background-color: white;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
 }
 
 .hide {
@@ -120,13 +163,16 @@ p,
 }
 
 #content-wrap {
-  height: 100vh;
   padding-bottom: 4rem;
   /* Footer height */
 }
 
 .aboutgrid div {
   cursor: pointer;
+}
+
+.aboutgrid div img {
+  height: 4rem;
 }
 
 .btns {
@@ -140,6 +186,18 @@ p,
 
 .pt-8 {
   padding-top: 8rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+#aboutSection {
+  display: none;
 }
 
 #h1L {

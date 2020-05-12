@@ -7,9 +7,11 @@ document.addEventListener(
         const btnR = document.getElementById("btnRight");
         const home = document.getElementById("home");
         const logo = document.getElementById("logo");
-        const about = document.getElementById("about");
+        const about = document.getElementById("aboutSection");
         const naviRow = document.getElementById("naviRow");
         const aboutRow = document.getElementsByClassName("aboutgrid");
+        const popup = document.getElementById("popup");
+
         // GET ABOUT GRID
         let Obj1 = aboutRow[0].childNodes;
         let Obj2 = aboutRow[1].childNodes;
@@ -17,7 +19,8 @@ document.addEventListener(
         let rowOne = Object.values(Obj1).filter((e) => e.nodeName != "#text");
         let rowTwo = Object.values(Obj2).filter((e) => e.nodeName != "#text");
         let rowThree = Object.values(Obj3).filter((e) => e.nodeName != "#text");
-        console.log(rowOne);
+
+        let Objects = {};
 
         function rowFade(row) {
             for (let i = 0; i < row.length; i++) {
@@ -27,11 +30,34 @@ document.addEventListener(
             }
         }
 
+        document.getElementById("wifi").addEventListener("mouseover", () => {
+            console.log("wifi");
+            event.target.src = "./img/wifi.gif";
+        });
+        function clickRow(row) {
+            row.map((e) => {
+                e.addEventListener("click", () => {
+                    // console.log(e.offsetTop + popup.style.width + "px");
+                    // popup.style.top =
+                    //     e.offsetTop + popup.offsetHeight / 1.7 + "px";
+                    // popup.style.left = e.offsetLeft + popup.offsetWidth + "px";
+                    popup.classList.add("slide-in-right");
+                    console.log(e.children[1].innerHTML);
+                });
+            });
+        }
+
+        console.log(about);
+
+        clickRow(rowOne);
+        clickRow(rowTwo);
+        clickRow(rowThree);
+
         rowFade(rowOne);
         rowFade(rowTwo);
         rowFade(rowThree);
 
-        console.log(Obj1[0]);
+        console.log(rowOne);
         // STart Animations delay
         setTimeout(() => {
             hOneL.classList.add("slide-in-left");
@@ -39,6 +65,8 @@ document.addEventListener(
         setTimeout(() => {
             hOneR.classList.add("slide-in-right");
         }, 400);
+
+        console.log(home.children[0]);
 
         // BTN EventHandling
 
@@ -50,7 +78,10 @@ document.addEventListener(
                 }, 200);
                 setTimeout(() => {
                     home.style.display = "none";
+                    home.classList.remove("hMain");
+                    home.children[0].remove("hMain");
                     logo.classList.add("scale-in-center");
+                    about.style.display = "block";
                 }, 550);
                 setTimeout(() => {
                     logo.classList.add("scale-in-center");

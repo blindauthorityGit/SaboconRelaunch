@@ -22,6 +22,10 @@ $font-bold: "pantonextrabold";
 $font-light: "pantonlight";
 $font-text: "Aleo", serif;
 
+.orange {
+    background-color: $primary-color;
+}
+
 .light {
     font-family: $font-light;
 }
@@ -90,7 +94,24 @@ p,
 
 .hMain {
     // height: calc(100% - 4rem) !important;
-    height: 100%;
+    // height: calc(100vh - 4rem);
+}
+
+.next {
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    background: lightgray;
+    height: 4rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home,
+#home > .row {
+    height: calc(100vh - 4rem);
 }
 
 .link {
@@ -99,6 +120,22 @@ p,
 
 .smLink {
     margin-right: 1rem;
+    display: flex;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+#popup {
+    position: fixed;
+    width: 20rem;
+    min-height: 10rem;
+    background-color: white;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    transform: translateX(1000px);
 }
 
 .hide {
@@ -130,7 +167,7 @@ p,
 }
 
 #content-wrap {
-    height: 100vh;
+    // height: 100vh;
     padding-bottom: 4rem; /* Footer height */
 }
 
@@ -141,6 +178,9 @@ p,
 .aboutgrid {
     div {
         cursor: pointer;
+        img {
+            height: 4rem;
+        }
     }
 }
 
@@ -154,6 +194,20 @@ p,
 
 .pt-8 {
     padding-top: 8rem;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+// SECTIONS
+
+#aboutSection {
+    display: none;
 }
 
 .btns:hover {
