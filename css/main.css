@@ -20,6 +20,10 @@
   font-family: "pantonlight";
 }
 
+.white {
+  color: #fff;
+}
+
 .heavy {
   font-family: "pantonextrabold";
 }
@@ -38,6 +42,7 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  color: #353c43;
 }
 
 h1 {
@@ -50,11 +55,22 @@ h2 span:nth-of-type(1) {
 }
 
 h3 {
-  font-family: "Aleo", serif;
+  font-family: "pantonextrabold";
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 0;
   margin-top: 1rem;
+}
+
+p {
+  line-height: 1.66rem;
+}
+
+.strich {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
 }
 
 .underline {
@@ -80,6 +96,10 @@ p,
 .shadow {
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
+}
+
+.hMainClient {
+  height: 100vh;
 }
 
 .next {
@@ -122,15 +142,15 @@ p,
 }
 
 #popup {
-  position: fixed;
+  position: absolute;
   width: 20rem;
   min-height: 10rem;
   background-color: white;
-  right: 0;
-  height: 100vh;
+  height: 20rem;
   z-index: 1;
   -webkit-transform: translateX(1000px);
           transform: translateX(1000px);
+  display: none;
 }
 
 .hide {
@@ -143,7 +163,7 @@ p,
 }
 
 .link:hover {
-  border-bottom: solid thin #333333;
+  border-bottom: solid thin #353c43;
 }
 
 #logo {
@@ -175,8 +195,12 @@ p,
   height: 4rem;
 }
 
+.txtWrapper {
+  max-width: 35rem;
+}
+
 .btns {
-  border: solid thin #333333;
+  border: solid thin #353c43;
   padding: 1rem 2rem;
   font-family: "Aleo", serif;
   cursor: pointer;
@@ -184,8 +208,22 @@ p,
   transition: all ease-in-out 250ms;
 }
 
+.clientLinks {
+  font-size: 0.85rem;
+  font-family: "Aleo", serif;
+  color: #9a9a9a;
+}
+
+.clientLogo {
+  opacity: 0.5;
+}
+
 .pt-8 {
   padding-top: 8rem;
+}
+
+.pb-8 {
+  padding-bottom: 8rem;
 }
 
 .mt-8 {
@@ -197,6 +235,10 @@ p,
 }
 
 #aboutSection {
+  display: none;
+}
+
+#clientSection {
   display: none;
 }
 
@@ -219,7 +261,7 @@ p,
   height: 4rem;
   /* Footer height */
   margin: 0;
-  color: #c2c2c2;
+  color: #9a9a9a;
 }
 
 #footer .container > .row > .col > .wrapper > span {
@@ -257,6 +299,12 @@ p,
   visibility: visible;
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scale-out-center {
+  visibility: visible;
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-out-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-elliptic-left-fwd {
@@ -479,6 +527,32 @@ p,
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 1;
   }
 }

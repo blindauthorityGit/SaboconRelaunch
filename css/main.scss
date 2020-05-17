@@ -15,8 +15,9 @@
 }
 
 $primary-color: #f8951d;
-$text-color: #333333;
-$light-grey: #c2c2c2;
+$text-color: #353c43;
+$light-grey: #9a9a9a;
+$white: #fff;
 
 $font-bold: "pantonextrabold";
 $font-light: "pantonlight";
@@ -29,6 +30,11 @@ $font-text: "Aleo", serif;
 .light {
     font-family: $font-light;
 }
+
+.white {
+    color: $white;
+}
+
 .heavy {
     font-family: $font-bold;
 }
@@ -47,6 +53,7 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
+    color: $text-color;
 }
 
 h1 {
@@ -61,11 +68,22 @@ h2 {
 }
 
 h3 {
-    font-family: $font-text;
+    font-family: $font-bold;
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 1rem;
+}
+
+p {
+    line-height: 1.66rem;
+}
+
+.strich {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $white;
 }
 
 .underline {
@@ -95,6 +113,10 @@ p,
 .hMain {
     // height: calc(100% - 4rem) !important;
     // height: calc(100vh - 4rem);
+}
+
+.hMainClient {
+    height: 100vh;
 }
 
 .next {
@@ -128,14 +150,15 @@ p,
 }
 
 #popup {
-    position: fixed;
+    position: absolute;
     width: 20rem;
     min-height: 10rem;
     background-color: white;
-    right: 0;
-    height: 100vh;
+    // right: 0;
+    height: 20rem;
     z-index: 1;
     transform: translateX(1000px);
+    display: none;
 }
 
 .hide {
@@ -184,6 +207,10 @@ p,
     }
 }
 
+.txtWrapper {
+    max-width: 35rem;
+}
+
 .btns {
     border: solid thin $text-color;
     padding: 1rem 2rem;
@@ -192,8 +219,22 @@ p,
     transition: all ease-in-out 250ms;
 }
 
+.clientLinks {
+    font-size: 0.85rem;
+    font-family: $font-text;
+    color: $light-grey;
+}
+
+.clientLogo {
+    opacity: 0.5;
+}
+
 .pt-8 {
     padding-top: 8rem;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
 }
 
 .mt-8 {
@@ -207,6 +248,10 @@ p,
 // SECTIONS
 
 #aboutSection {
+    display: none;
+}
+
+#clientSection {
     display: none;
 }
 
@@ -262,6 +307,11 @@ p,
 .scale-in-center {
     visibility: visible;
     animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scale-out-center {
+    visibility: visible;
+    animation: scale-out-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-elliptic-left-fwd {
@@ -345,6 +395,17 @@ p,
     }
     100% {
         transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-out-center {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
         opacity: 1;
     }
 }
