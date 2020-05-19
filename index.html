@@ -22,7 +22,12 @@
             src="https://kit.fontawesome.com/a7b6339581.js"
             crossorigin="anonymous"
         ></script>
-        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Sabocon GmbH</title>
     </head>
     <body>
         <div id="page-container">
@@ -30,7 +35,7 @@
                 <!-- //NAV -->
                 <div class="container-fluid" id="naviRow">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2">
                             <a href="./SaboconRelaunch/index.html">
                                 <img
                                     class="logo hide"
@@ -41,11 +46,11 @@
                             </a>
                         </div>
                         <div
-                            class="col d-flex justify-content-end align-items-center"
+                            class="col d-flex justify-content-end align-items-center height4"
                         >
                             <div class="link" id="about">About</div>
-                            <div class="link">Clients</div>
-                            <div class="link">Contact</div>
+                            <div class="link" id="clients">Clients</div>
+                            <div class="link" id="contact">Contact</div>
                             <div
                                 class="wrapper d-flex justify-content-center align-items-center"
                             >
@@ -65,10 +70,10 @@
 
                 <!-- CLIENTS SECTION -->
                 <section class="" id="clientSection">
-                    <div class="container hMainClient">
-                        <div class="row pt-8">
+                    <div class="container vh100Container">
+                        <div class="row">
                             <div class="col-lg-6">
-                                <h2>
+                                <h2 class="bgText">
                                     <span class="light">WE ARE </span>
                                     <span>PROUD...</span>
                                 </h2>
@@ -158,8 +163,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid orange pt-8 pb-8 hMainClient">
-                        <div class="row">
+                    <div class="container-fluid orange">
+                        <div class="row vh100ContainerFull">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -167,21 +172,35 @@
                                             <span class="light">USE</span>
                                             <span>CASE I</span>
                                         </h2>
+                                        <h3 class="mt-5">
+                                            Interdrinks / Hopt France
+                                        </h3>
+                                        <p class="mt-4">
+                                            Production of IoT smart tags using
+                                            NFC technology and our own cloud
+                                            software to digitalize Interdrinks
+                                            beer calendar 2017.
+                                        </p>
+                                        <p>
+                                            Analysis in real-time of valuable
+                                            consumer data regarding unique
+                                            visits and actions, time and place
+                                            (among others).
+                                        </p>
+                                        <p>
+                                            Up to 7.000 unique actions per day
+                                            via smart NFC tag connecting the
+                                            single beer bottles with the
+                                            smartphones of the consumers.
+                                        </p>
                                     </div>
                                     <!-- <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                                         <h3 class="light white">Interdrinks / Hopt France</h2>
                                         <img src="./img/usecase1.svg" alt="" />
                                     </div> -->
                                     <div
-                                        class="col-lg-12 d-flex justify-content-center align-items-center"
+                                        class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
                                     >
-                                        <!-- animation div, used by Lottie -->
-                                        <div
-                                            id="robotLottie"
-                                            class="animation"
-                                        ></div>
-                                        <!-- robot animation trigger, used by ScrollMagic -->
-                                        <div id="trigger" class="scene"></div>
                                         <div
                                             class="col d-flex justify-content-center"
                                         >
@@ -226,36 +245,11 @@
                                         <img src="./img/usecase1.svg" alt="" /> -->
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="mt-5">
-                                            Interdrinks / Hopt France
-                                        </h3>
-                                        <p class="mt-4">
-                                            Production of IoT smart tags using
-                                            NFC technology and our own cloud
-                                            software to digitalize Interdrinks
-                                            beer calendar 2017.
-                                        </p>
-                                        <p>
-                                            Analysis in real-time of valuable
-                                            consumer data regarding unique
-                                            visits and actions, time and place
-                                            (among others).
-                                        </p>
-                                        <p>
-                                            Up to 7.000 unique actions per day
-                                            via smart NFC tag connecting the
-                                            single beer bottles with the
-                                            smartphones of the consumers.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="container-fluid pt-8 pb-8">
-                        <div class="row">
+                        <div class="row vh100">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -301,23 +295,41 @@
 
                 <!-- ABOUT SECTION -->
 
-                <section class="hMain pt-8" id="aboutSection">
-                    <div class="next">
-                        <div class="popup shadow" id="popup">
-                            <h3>test</h3>
+                <section class="hMain" id="aboutSection">
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup shadow" id="popup">
+                        <div class="wrapper text-center">
+                            <img src="./img/design.svg" alt="" />
+                            <h3>Design</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Tenetur, quos. Ad esse a nulla
+                                veritatis quasi in consequatur nostrum sed
+                                beatae ipsa quia aut impedit, obcaecati ipsum
+                                laborum minima voluptatem quisquam est modi sint
+                                non excepturi, soluta vero dignissimos? Sunt
+                                soluta provident explicabo voluptatem. Mollitia
+                                vel est molestias placeat odit?
+                            </p>
                         </div>
-                        >
+                        <h3>test</h3>
                     </div>
+
                     <div class="container mb-8">
-                        <div class="row">
+                        <div class="row vh100 scrollSnap">
                             <div class="col">
-                                <h2 class="mb-5">
+                                <h2 class="mb-6 text-center bgText">
                                     <span>WE SUPPORT </span><span>YOU</span>
                                 </h2>
-
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Aliquid ea, possimus nihil
+                                    sunt iusto soluta reiciendis in numquam.
+                                    Eum, quae eos quis ipsa consectetur iusto.
+                                </p>
                                 <div class="container mt-5">
                                     <div
-                                        class="row mb-5 aboutgrid"
+                                        class="row mb-4 aboutgrid"
                                         id="aboutgrid"
                                     >
                                         <div
@@ -374,7 +386,7 @@
                                             >
                                         </div>
                                     </div>
-                                    <div class="row mb-5 aboutgrid">
+                                    <div class="row mb-4 aboutgrid">
                                         <div
                                             class="col d-flex flex-column justify-content-center align-items-center"
                                         >
@@ -490,11 +502,11 @@
                         </div>
                     </div>
                     <div class="container-fluid orange pt-8">
-                        <div class="row">
+                        <div class="row scrollSnap">
                             <div class="container">
-                                <div class="row">
+                                <div class="row vh100 vh100Tablet">
                                     <div class="col">
-                                        <h2 class="mb-5">
+                                        <h2 class="mb-5 bgTextWhite">
                                             <span class="light">WHAT WE </span
                                             >DO<span></span>
                                         </h2>

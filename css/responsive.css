@@ -1,1 +1,103 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (min-width: 768px) and (max-width: 919px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+  .height4 {
+    height: 4rem;
+  }
+  #logoBig img {
+    position: absolute;
+    top: 9rem;
+    z-index: 2;
+    /* left: 20px; */
+    width: 45%;
+  }
+  .link {
+    font-size: 0.85rem;
+  }
+  #naviRow > .row {
+    -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .heroRight {
+    background: #fff;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .imgWrapper img {
+    width: 100%;
+  }
+  #naviRow {
+    position: fixed;
+  }
+  #naviRow .row {
+    background: white;
+  }
+  .vh100Tablet {
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
+  #popup {
+    position: absolute;
+    width: 50%;
+    background-color: white;
+    z-index: 1;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    display: none;
+    right: 0;
+    height: 100%;
+    padding-top: 6rem;
+  }
+  #popup .wrapper {
+    padding: 2.5rem;
+  }
+  #popup h3 {
+    margin: 2rem 0 3rem 0;
+  }
+  .overlay {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999;
+    opacity: 0;
+    -webkit-transition: opacity ease-in-out 200ms;
+    transition: opacity ease-in-out 200ms;
+    display: none;
+  }
+  .heroRight {
+    padding-top: 15rem;
+  }
+  .aboutgrid {
+    margin-bottom: 2.5rem !important;
+  }
+  .underline {
+    text-align: center;
+  }
+  .bgText {
+    background: #fe8f05;
+    color: white;
+    padding: 2rem;
+  }
+  .bgTextWhite {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .txtWrapper {
+    /* max-width: 35rem; */
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .aboutgrid div img {
+    height: 3rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,13 +1,13 @@
 <svg id="soundengine" xmlns="http://www.w3.org/2000/svg" width="77" height="74.113" viewBox="0 0 77 74.113">
   <g id="Calque_1" data-name="Calque 1">
-    <rect id="Rechteck_26" data-name="Rechteck 26" width="11.404" height="14.625" transform="translate(31.862 59.477)" fill="#f8951d"/>
-    <rect id="Rechteck_27" data-name="Rechteck 27" width="11.392" height="14.183" transform="translate(3.209)" fill="#f8951d"/>
-    <rect id="Rechteck_28" data-name="Rechteck 28" width="11.404" height="41.977" transform="translate(31.862)" fill="#f8951d"/>
-    <rect id="Rechteck_29" data-name="Rechteck 29" width="11.392" height="42.419" transform="translate(3.209 31.683)" fill="#f8951d"/>
-    <rect id="Rechteck_30" data-name="Rechteck 30" width="11.404" height="32.625" transform="translate(62.387 41.488)" fill="#f8951d"/>
-    <rect id="Rechteck_31" data-name="Rechteck 31" width="11.404" height="24.633" transform="translate(62.387)" fill="#f8951d"/>
-    <rect id="Rechteck_32" data-name="Rechteck 32" width="17.81" height="9.4" transform="translate(0 18.012)" fill="#f8951d"/>
-    <rect id="Rechteck_33" data-name="Rechteck 33" width="17.81" height="9.4" transform="translate(28.653 46.379)" fill="#f8951d"/>
-    <rect id="Rechteck_34" data-name="Rechteck 34" width="17.81" height="9.4" transform="translate(59.19 28.211)" fill="#f8951d"/>
+    <rect id="Rechteck_26" data-name="Rechteck 26" width="11.404" height="14.625" transform="translate(31.862 59.477)" fill="#c2c2ca"/>
+    <rect id="Rechteck_27" data-name="Rechteck 27" width="11.392" height="14.183" transform="translate(3.209)" fill="#c2c2ca"/>
+    <rect id="Rechteck_28" data-name="Rechteck 28" width="11.404" height="41.977" transform="translate(31.862)" fill="#c2c2ca"/>
+    <rect id="Rechteck_29" data-name="Rechteck 29" width="11.392" height="42.419" transform="translate(3.209 31.683)" fill="#c2c2ca"/>
+    <rect id="Rechteck_30" data-name="Rechteck 30" width="11.404" height="32.625" transform="translate(62.387 41.488)" fill="#c2c2ca"/>
+    <rect id="Rechteck_31" data-name="Rechteck 31" width="11.404" height="24.633" transform="translate(62.387)" fill="#c2c2ca"/>
+    <rect id="Rechteck_32" data-name="Rechteck 32" width="17.81" height="9.4" transform="translate(0 18.012)" fill="#c2c2ca"/>
+    <rect id="Rechteck_33" data-name="Rechteck 33" width="17.81" height="9.4" transform="translate(28.653 46.379)" fill="#c2c2ca"/>
+    <rect id="Rechteck_34" data-name="Rechteck 34" width="17.81" height="9.4" transform="translate(59.19 28.211)" fill="#c2c2ca"/>
   </g>
 </svg>

@@ -9,11 +9,13 @@ document.addEventListener(
         const logo = document.getElementById("logo");
         const about = document.getElementById("aboutSection");
         const aboutMenu = document.getElementById("about");
+        const clientsMenu = document.getElementById("clients");
         const clients = document.getElementById("clientSection");
         const naviRow = document.getElementById("naviRow");
         const aboutRow = document.getElementsByClassName("aboutgrid");
         const popup = document.getElementById("popup");
         const cloud = document.getElementById("cloud");
+        const overlay = document.getElementById("overlay");
 
         const useCaseOne = document.getElementsByClassName("useCaseOne");
         console.log(useCaseOne[0]);
@@ -52,12 +54,21 @@ document.addEventListener(
                     btnL.classList.remove("heartbeat");
                     btnR.classList.remove("heartbeat");
                     naviRow.classList.remove("shadow");
-                    home.classList.remove("slide-out-blurred-bottom");
+                    home.classList.remove("slide-out-bottom");
                     home.classList.add("slide-in-right");
                 } else if (dir == "about") {
                     home.style.display = "none";
+                    clients.style.display = "none";
                     about.style.display = "block";
                     about.classList.add("slide-in-left");
+                    naviRow.classList.add("shadow");
+                    logo.classList.remove("scale-out-center");
+                    logo.classList.add("scale-in-center");
+                } else if (dir == "clients") {
+                    home.style.display = "none";
+                    about.style.display = "none";
+                    clients.style.display = "block";
+                    clients.classList.add("slide-in-left");
                     naviRow.classList.add("shadow");
                     logo.classList.remove("scale-out-center");
                     logo.classList.add("scale-in-center");
@@ -65,39 +76,17 @@ document.addEventListener(
             }, 100);
         });
 
-        // var controller = new ScrollMagic.Controller();
-        // new ScrollMagic.Scene({
-        //     duration: 800, // the scene should last for a scroll distance of 100px
-        //     offset: 50, // start this scene after scrolling for 50px
-        //     triggerElement: ".useCaseOne",
-        // })
-        //     .setClassToggle(".useCaseOne", "show")
-        //     .setPin("body") // pins the element for the the scene's duration
-        //     .addTo(controller); // assign the scene to the controller
-
-        // SCROLL ANIMATION
-
-        // var robotAnimWindow = document.getElementById("robotLottie"),
-        //     robotAnimData = {
-        //         wrapper: robotAnimWindow,
-        //         animType: "svg",
-        //         loop: false,
-        //         prerender: true,
-        //         autoplay: false,
-        //         path: "./animation/data.json",
-        //     };
-
-        // var robotAnim = bodymovin.loadAnimation(robotAnimData);
-        // robotAnim.addEventListener("DOMLoaded", onRobotDOMLoaded);
-
-        // -------------------------------
-
         function rowFade(row) {
             for (let i = 0; i < row.length; i++) {
                 setTimeout(function timer() {
                     row[i].classList.add("slide-in-left");
                 }, i * 100);
             }
+            setTimeout(() => {
+                for (let i = 0; i < row.length; i++) {
+                    row[i].classList.remove("slide-in-left");
+                }
+            }, 800);
         }
         // document.getElementById("wifi").addEventListener("mouseover", () => {
         //     console.log("wifi");
@@ -106,24 +95,34 @@ document.addEventListener(
         function clickRow(row) {
             row.map((e) => {
                 e.addEventListener("click", () => {
-                    // console.log(e.offsetTop + popup.style.width + "px");
-                    // popup.style.top =
-                    //     e.offsetTop + popup.offsetHeight / 1.7 + "px";
-                    // popup.style.left = e.offsetLeft + popup.offsetWidth + "px";
+                    overlay.classList.remove("slide-out-left");
+                    popup.style.display = "block";
+                    popup.classList.remove("hideSide");
                     popup.classList.add("slide-in-right");
-                    popup.style.left = e.viewportOffset.left + "px";
+                    overlay.style.display = "block";
+                    overlay.classList.add("show");
+
                     console.log(e.children[1].innerHTML);
                 });
             });
         }
 
-        console.log(about);
+        overlay.addEventListener("click", () => {
+            if (event.target != popup) {
+                popup.classList.remove("slide-in-right");
+                popup.classList.add("hideSide");
+                overlay.classList.add("slide-out-left");
+            }
+        });
+
+        document.body.addEventListener("click", () => {
+            console.log(event.target);
+        });
 
         clickRow(rowOne);
         clickRow(rowTwo);
         clickRow(rowThree);
 
-        console.log(rowOne);
         // STart Animations delay
         setTimeout(() => {
             hOneL.classList.add("slide-in-left");
@@ -139,26 +138,34 @@ document.addEventListener(
         function aboutT(trigger) {
             trigger.addEventListener("click", () => {
                 window.history.pushState("object or string", "About", "/about");
-                clients.style.display = "none";
+
                 href = window.location.href;
                 logo.classList.remove("scale-out-center");
                 btnL.classList.add("heartbeat");
                 setTimeout(() => {
-                    home.classList.add("slide-out-blurred-bottom");
-                }, 200);
+                    home.classList.add("slide-out-bottom");
+                    clients.classList.add("slide-out-right");
+                    about.classList.add("slide-in-left");
+                }, 100);
                 setTimeout(() => {
                     home.style.display = "none";
+                    clients.style.display = "none";
+
                     home.classList.remove("hMain");
                     logo.classList.add("scale-in-center");
-                    rowFade(rowOne);
-                    rowFade(rowTwo);
-                    rowFade(rowThree);
+                    // rowFade(rowOne);
+                    // rowFade(rowTwo);
+                    // rowFade(rowThree);
                     about.style.display = "block";
-                }, 550);
+                }, 650);
                 setTimeout(() => {
                     logo.classList.add("scale-in-center");
                     naviRow.classList.add("shadow");
+                    clients.classList.remove("slide-out-right");
                 }, 800);
+                setTimeout(() => {
+                    about.classList.remove("slide-in-left");
+                }, 1500);
             });
         }
 
@@ -177,23 +184,28 @@ document.addEventListener(
                 logo.classList.remove("scale-out-center");
                 btnR.classList.add("heartbeat");
                 setTimeout(() => {
-                    home.classList.add("slide-out-blurred-bottom");
-                }, 200);
+                    home.classList.add("slide-out-bottom");
+                    about.classList.add("slide-out-left");
+                }, 100);
                 setTimeout(() => {
                     home.style.display = "none";
                     home.classList.remove("hMain");
                     // home.children[0].remove("hMain");
                     logo.classList.add("scale-in-center");
                     clients.style.display = "block";
-                }, 550);
+                    clients.classList.add("slide-in-right");
+                    about.style.display = "none";
+                }, 650);
                 setTimeout(() => {
                     logo.classList.add("scale-in-center");
                     naviRow.classList.add("shadow");
+                    about.classList.remove("slide-out-left");
                 }, 800);
             });
         }
 
         clientsT(btnR);
+        clientsT(clientsMenu);
 
         console.log();
 

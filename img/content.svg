@@ -1,10 +1,10 @@
 <svg id="content" xmlns="http://www.w3.org/2000/svg" width="77.18" height="77.35" viewBox="0 0 77.18 77.35">
   <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_30" data-name="Pfad 30" d="M0,0V53.742a6.091,6.091,0,0,0,5.756,6.389H71.409a6.091,6.091,0,0,0,5.756-6.389V0ZM71.5,48.1a5.21,5.21,0,0,1-4.962,5.459H10.584A5.21,5.21,0,0,1,5.621,48.1V12.48H71.5Z" transform="translate(0.006)" fill="#f8951d"/>
-    <path id="Pfad_31" data-name="Pfad 31" d="M51.55,61.865,36.117,46.42a1.935,1.935,0,0,0-1.514-.558h-.223a1.91,1.91,0,0,0-1.514.558L17.434,61.865a1.985,1.985,0,0,0,2.8,2.779L32.507,52.374V64.333a1.985,1.985,0,0,0,3.97,0V52.4L48.747,64.644a1.973,1.973,0,0,0,2.8,0,2,2,0,0,0,0-2.779Z" transform="translate(4.097 11.032)" fill="#f8951d"/>
-    <path id="Pfad_32" data-name="Pfad 32" d="M22.057,29.025,35.207,27.2A12.952,12.952,0,1,0,30.53,39.135Z" transform="translate(2.278 3.876)" fill="#f8951d"/>
-    <rect id="Rechteck_23" data-name="Rechteck 23" width="22.715" height="2.469" transform="translate(42.957 25.581)" fill="#f8951d"/>
-    <rect id="Rechteck_24" data-name="Rechteck 24" width="22.715" height="2.469" transform="translate(42.981 32.057)" fill="#f8951d"/>
-    <rect id="Rechteck_25" data-name="Rechteck 25" width="14.465" height="2.456" transform="translate(42.981 38.545)" fill="#f8951d"/>
+    <path id="Pfad_30" data-name="Pfad 30" d="M0,0V53.742a6.091,6.091,0,0,0,5.756,6.389H71.409a6.091,6.091,0,0,0,5.756-6.389V0ZM71.5,48.1a5.21,5.21,0,0,1-4.962,5.459H10.584A5.21,5.21,0,0,1,5.621,48.1V12.48H71.5Z" transform="translate(0.006)" fill="#c2c2ca"/>
+    <path id="Pfad_31" data-name="Pfad 31" d="M51.55,61.865,36.117,46.42a1.935,1.935,0,0,0-1.514-.558h-.223a1.91,1.91,0,0,0-1.514.558L17.434,61.865a1.985,1.985,0,0,0,2.8,2.779L32.507,52.374V64.333a1.985,1.985,0,0,0,3.97,0V52.4L48.747,64.644a1.973,1.973,0,0,0,2.8,0,2,2,0,0,0,0-2.779Z" transform="translate(4.097 11.032)" fill="#c2c2ca"/>
+    <path id="Pfad_32" data-name="Pfad 32" d="M22.057,29.025,35.207,27.2A12.952,12.952,0,1,0,30.53,39.135Z" transform="translate(2.278 3.876)" fill="#c2c2ca"/>
+    <rect id="Rechteck_23" data-name="Rechteck 23" width="22.715" height="2.469" transform="translate(42.957 25.581)" fill="#c2c2ca"/>
+    <rect id="Rechteck_24" data-name="Rechteck 24" width="22.715" height="2.469" transform="translate(42.981 32.057)" fill="#c2c2ca"/>
+    <rect id="Rechteck_25" data-name="Rechteck 25" width="14.465" height="2.456" transform="translate(42.981 38.545)" fill="#c2c2ca"/>
   </g>
 </svg>
