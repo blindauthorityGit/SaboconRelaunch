@@ -16,10 +16,19 @@
 
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="./css/responsive.css" />
+        <link
+            rel="stylesheet"
+            href="./node_modules/animate.css/animate.min.css"
+        />
         <script src="./js/app.js"></script>
 
         <script
             src="https://kit.fontawesome.com/a7b6339581.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
         <link
@@ -49,7 +58,9 @@
                             class="col d-flex justify-content-end align-items-center height4"
                         >
                             <div class="link" id="about">About</div>
-                            <div class="link" id="clients">Clients</div>
+                            <div class="link" id="clients">
+                                Clients
+                            </div>
                             <div class="link" id="contact">Contact</div>
                             <div
                                 class="wrapper d-flex justify-content-center align-items-center"
@@ -70,7 +81,10 @@
 
                 <!-- CLIENTS SECTION -->
                 <section class="" id="clientSection">
-                    <div class="container vh100Container">
+                    <!-- <div class="toptest">
+                        <img src="./img/curved/toppi.svg" alt="" />
+                    </div> -->
+                    <div class="container vh100Container scroller">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h2 class="bgText">
@@ -85,28 +99,28 @@
                         <div
                             class="row d-flex justify-content-center align-items-center mt-5"
                         >
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <img
                                     class="clientLogo"
                                     src="./img/db.svg"
                                     alt=""
                                 />
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <img
                                     class="clientLogo"
                                     src="./img/bayer.svg"
                                     alt=""
                                 />
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <img
                                     class="clientLogo"
                                     src="./img/adidas.svg"
                                     alt=""
                                 />
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <img
                                     class="clientLogo"
                                     src="./img/xerox.svg"
@@ -163,11 +177,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid orange">
-                        <div class="row vh100ContainerFull">
+                    <div class="container-fluid">
+                        <div class="row pathTop">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="768"
+                                height="114.568"
+                                viewBox="0 0 768 114.568"
+                            >
+                                <path
+                                    id="top"
+                                    d="M-9492,2153.948s159.3-53.317,339.205,0,428.795,0,428.795,0v90.872h-768Z"
+                                    transform="translate(9492 -2130.252)"
+                                    fill="#f8951d"
+                                />
+                            </svg>
+                        </div>
+                        <div class="row vh100ContainerFull orange scroller">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-4">
                                         <h2>
                                             <span class="light">USE</span>
                                             <span>CASE I</span>
@@ -199,19 +228,21 @@
                                         <img src="./img/usecase1.svg" alt="" />
                                     </div> -->
                                     <div
-                                        class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
+                                        class="col-lg-6 col-md-8 d-flex flex-column justify-content-center align-items-center"
                                     >
-                                        <div
-                                            class="col d-flex justify-content-center"
-                                        >
-                                            <h3 class="light white useCaseOne">
-                                                Interdrinks / Hopt France
-                                            </h3>
-                                        </div>
                                         <div
                                             class="col d-flex justify-content-center useCaseOne"
                                         >
-                                            <div class="strich"></div>
+                                            <img
+                                                id="interdrinks"
+                                                src="./img/interdrinks.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="col d-flex justify-content-center align-items-center useCaseOne"
+                                        >
+                                            <i class="fas fa-sort-down"></i>
                                         </div>
                                         <div
                                             class="col d-flex justify-content-center useCaseOne"
@@ -222,9 +253,9 @@
                                             />
                                         </div>
                                         <div
-                                            class="col d-flex justify-content-center useCaseOne"
+                                            class="col d-flex justify-content-center align-items-center useCaseOne"
                                         >
-                                            <div class="strich"></div>
+                                            <i class="fas fa-sort-down"></i>
                                         </div>
                                         <div
                                             class="col d-flex justify-content-center useCaseOne"
@@ -232,9 +263,9 @@
                                             <img src="./img/idea.svg" alt="" />
                                         </div>
                                         <div
-                                            class="col d-flex justify-content-center useCaseOne"
+                                            class="col d-flex justify-content-center align-items-center useCaseOne"
                                         >
-                                            <div class="strich"></div>
+                                            <i class="fas fa-sort-down"></i>
                                         </div>
                                         <div
                                             class="col d-flex justify-content-center useCaseOne"
@@ -247,12 +278,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row pathBottom">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="768"
+                                height="102.733"
+                                viewBox="0 0 768 102.733"
+                            >
+                                <path
+                                    id="bottom"
+                                    d="M768,81.485s-159.3,47.809-339.205,0S0,81.485,0,81.485V0H768Z"
+                                    fill="#f8751d"
+                                />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="container-fluid pt-8 pb-8">
-                        <div class="row vh100">
+                    <div
+                        class="container-fluid pt-8 pb-8 darkBg"
+                        id="useCaseTwo"
+                    >
+                        <div class="row scroller">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-4">
                                         <h2>
                                             <span class="light">USE</span>
                                             <span>CASE I</span>
@@ -280,7 +328,7 @@
                                         </p>
                                     </div>
                                     <div
-                                        class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
+                                        class="col-lg-6 col-md-8 d-flex flex-column justify-content-center align-items-center"
                                     >
                                         <h3 class="light white">
                                             Interdrinks / Hopt France
@@ -299,7 +347,7 @@
                     <div class="overlay" id="overlay"></div>
                     <div class="popup shadow" id="popup">
                         <div class="wrapper text-center">
-                            <img src="./img/design.svg" alt="" />
+                            <img src="./img/orange/design.svg" alt="" />
                             <h3>Design</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur
@@ -315,10 +363,10 @@
                         <h3>test</h3>
                     </div>
 
-                    <div class="container mb-8">
-                        <div class="row vh100 scrollSnap">
+                    <div class="container mb-8 pt-8">
+                        <div class="row scrollSnap">
                             <div class="col">
-                                <h2 class="mb-6 text-center bgText">
+                                <h2 class="mb-5 text-center bgText">
                                     <span>WE SUPPORT </span><span>YOU</span>
                                 </h2>
                                 <p>
@@ -501,10 +549,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid orange pt-8">
-                        <div class="row scrollSnap">
+                    <div class="container-fluid">
+                        <div class="row pathTop">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="768"
+                                height="114.568"
+                                viewBox="0 0 768 114.568"
+                            >
+                                <path
+                                    id="top"
+                                    d="M-9492,2153.948s159.3-53.317,339.205,0,428.795,0,428.795,0v90.872h-768Z"
+                                    transform="translate(9492 -2130.252)"
+                                    fill="#f8951d"
+                                />
+                            </svg>
+                        </div>
+                        <div class="row scrollSnap orange">
                             <div class="container">
-                                <div class="row vh100 vh100Tablet">
+                                <div class="row vh100 vh100end">
                                     <div class="col">
                                         <h2 class="mb-5 bgTextWhite">
                                             <span class="light">WHAT WE </span
@@ -533,7 +596,8 @@
                                             class="imgWrapper mt-8 d-flex justify-content-center mb-8"
                                         >
                                             <img
-                                                src="./img/whatwedo.svg"
+                                                id="logoImg"
+                                                src="./img/SVG/sabo_white.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -545,7 +609,35 @@
                 </section>
 
                 <!-- INDEX -->
-
+                <div class="frontPath">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="770.134"
+                        height="370.4"
+                        viewBox="0 0 770.134 370.4"
+                    >
+                        <defs>
+                            <linearGradient
+                                id="linear-gradient"
+                                x1="0.5"
+                                x2="0.5"
+                                y2="1"
+                                gradientUnits="objectBoundingBox"
+                            >
+                                <stop offset="0" stop-color="#f8951d" />
+                                <stop offset="0.697" stop-color="#f88d1d" />
+                                <stop offset="1" stop-color="#f8751d" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            id="frontneu"
+                            d="M-11388,1898.667s83.772,150.041,380,150.041,390.134-150.041,390.134-150.041v370.4H-11388Z"
+                            transform="translate(11388 -1898.667)"
+                            fill="url(#linear-gradient)"
+                        />
+                    </svg>
+                </div>
                 <section class="container-fluid hMain" id="home">
                     <div class="row hMain">
                         <div
@@ -554,7 +646,7 @@
                         >
                             <img
                                 class="slide-in-elliptic-left-fwd"
-                                src="./img/logo_big.svg"
+                                src="./img/logotxt.svg"
                                 alt=""
                             />
                         </div>
@@ -588,6 +680,9 @@
                         </div>
                     </div>
                 </section>
+                <div class="frontPathKreis" id="frontPathKreis">
+                    <img src="./img/curved/bigasskreis.svg" alt="" />
+                </div>
             </div>
             <div class="row footer" id="footer">
                 <div

@@ -15,20 +15,38 @@
 }
 
 $primary-color: #f8951d;
+$yellowish: #fdb02e;
 $text-color: #353c43;
 $light-grey: #9a9a9a;
+$light-blue: #c1c7cc;
 $white: #fff;
 
 $font-bold: "pantonextrabold";
 $font-light: "pantonlight";
 $font-text: "Roboto", serif;
 
+.darkBg {
+    background: $text-color;
+    color: $light-blue;
+}
+
 body {
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
+    // height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 .orange {
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background: rgb(248, 149, 29);
+    background: linear-gradient(
+        180deg,
+        rgba(248, 149, 29, 1) 0%,
+        rgba(248, 117, 29, 1) 100%
+    );
 }
 
 .light {
@@ -55,7 +73,6 @@ body {
 
 html,
 body {
-    height: 100%;
     overflow-x: hidden;
     color: $text-color;
 }
@@ -89,11 +106,11 @@ p {
 }
 
 .scrollSnap {
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
 }
 
 .show {
-    opacity: 0.1 !important;
+    opacity: 0.5 !important;
     z-index: 1 !important;
 }
 
@@ -119,10 +136,21 @@ p {
 }
 
 .vh100ContainerFull {
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.frontPath {
+    display: none;
+}
+
+.frontPathKreis {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    z-index: -2;
 }
 
 .strich {
@@ -143,13 +171,16 @@ p,
 }
 
 .heroRight {
-    background: $primary-color;
+    // background: $primary-color;
 }
 
 #naviRow {
     height: 4rem;
     position: absolute;
     z-index: 10;
+    .row {
+        min-height: 4rem;
+    }
 }
 
 .shadow {
@@ -163,6 +194,10 @@ p,
 
 .hMainClient {
     height: 100vh;
+}
+
+.bgText {
+    background: $yellowish;
 }
 
 .next {
@@ -179,6 +214,7 @@ p,
 
 #home {
     will-change: transform, opacity;
+    overflow: hidden;
 }
 
 #home,
@@ -237,6 +273,7 @@ p,
 #page-container {
     position: relative;
     min-height: 100%;
+    overflow: hidden;
 }
 
 #content-wrap {
@@ -262,11 +299,18 @@ p,
 }
 
 .btns {
-    border: solid thin $text-color;
+    border: solid thick #fff;
     padding: 1rem 2rem;
-    font-family: $font-text;
+    font-family: "Roboto", serif;
     cursor: pointer;
+    -webkit-transition: all ease-in-out 250ms;
     transition: all ease-in-out 250ms;
+    color: white;
+}
+
+.btns:hover {
+    background: white;
+    color: $text-color;
 }
 
 .clientLinks {
@@ -388,6 +432,11 @@ p,
     -webkit-animation: slide-out-bottom 0.5s
         cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.fade-out {
+    -webkit-animation: fade-out 1s ease-out both;
+    animation: fade-out 1s ease-out both;
 }
 
 @keyframes slide-in-elliptic-left-fwd {
@@ -557,6 +606,23 @@ p,
     100% {
         -webkit-transform: translateX(-1000px);
         transform: translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
         opacity: 0;
     }
 }

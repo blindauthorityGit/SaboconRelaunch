@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="458.779" height="443.392" viewBox="0 0 458.779 443.392">
+  <g id="logotxt" transform="translate(-382.106 -286)">
+    <g id="logo_big" transform="translate(391 286)">
+      <g id="Layer_7" data-name="Layer 7" transform="translate(0 0)">
+        <path id="Pfad_1" data-name="Pfad 1" d="M439.351,130.51,279.37,290.7s-19.336,24.372-9.471,55.435c.207-.611,182.455-182.446,182.455-182.446A271.733,271.733,0,0,0,439.351,130.51Z" transform="translate(-16.141 -7.887)" fill="#f8951d"/>
+        <path id="Pfad_2" data-name="Pfad 2" d="M453.22,198.7C424.854,226.962,252.9,398.321,253.279,399.063,176.714,336.2,242.4,256.812,242.4,256.812L411.24,89.983h0A221.738,221.738,0,0,0,249.568,0L108.2,141.358c-28.7,28.7-6.953,56.722-6.953,56.722S255.487,44.244,255.337,44.047c69.011,69,15.512,136.238,15.512,136.238L74,377.012a221.325,221.325,0,0,0,158.317,66.381c122.633,0,222.039-99.416,222.039-222.039a225.764,225.764,0,0,0-1.14-22.686Z" transform="translate(-4.472 0)" fill="#f8951d"/>
+        <path id="Pfad_3" data-name="Pfad 3" d="M221.231,172.287c28.187-28.187,13.6-59.334,13.6-59.334S77.373,271.223,76.969,270.819C8.87,202.71,56.919,134.1,56.919,134.1L180.651,10.38C77.815,29.754,0,120.028,0,228.5A220.968,220.968,0,0,0,39.152,354.4Z" transform="translate(0 -0.627)" fill="#f8951d"/>
+      </g>
+    </g>
+    <text id="SABOCON.COM" transform="translate(400.49 710.894) rotate(-45)" fill="#333" font-size="28" font-family="Panton-ExtraBold, Panton" font-weight="800" letter-spacing="0.055em"><tspan x="0" y="0">SABOCON</tspan><tspan y="0" font-family="Panton-Light, Panton" font-weight="300">.COM</tspan></text>
+  </g>
+</svg>

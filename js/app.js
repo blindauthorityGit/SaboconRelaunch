@@ -16,10 +16,56 @@ document.addEventListener(
         const popup = document.getElementById("popup");
         const cloud = document.getElementById("cloud");
         const overlay = document.getElementById("overlay");
+        const scroller = document.getElementsByClassName("scroller");
+        const interdrinks = document.getElementById("interdrinks");
+        const frontPathKreis = document.getElementById("frontPathKreis");
+        const useCaseOne = Array.from(
+            document.getElementsByClassName("useCaseOne")
+        );
+        const top = document.getElementById("top");
+        const pathTop = Array.from(document.getElementsByClassName("pathTop"));
+        const pathBottom = Array.from(
+            document.getElementsByClassName("pathBottom")
+        );
 
-        const useCaseOne = document.getElementsByClassName("useCaseOne");
-        console.log(useCaseOne[0]);
+        let intViewportWidth = window.innerWidth;
+        let intViewportHeight = window.innerWidth / 6.699992148446701;
 
+        setInterval(() => {
+            intViewportWidth = window.innerWidth;
+            intViewportHeight = intViewportWidth / 6.699992148446701;
+            intViewportHeightBottom = intViewportWidth / 7.47445;
+
+            Array.from(pathTop[0].children)[0].style.width = intViewportWidth;
+            Array.from(pathTop[0].children)[0].style.height = intViewportHeight;
+
+            Array.from(pathTop[1].children)[0].style.width = intViewportWidth;
+            Array.from(pathTop[1].children)[0].style.height = intViewportHeight;
+
+            Array.from(
+                pathBottom[0].children
+            )[0].style.width = intViewportWidth;
+            Array.from(
+                pathBottom[0].children
+            )[0].style.height = intViewportHeightBottom;
+        }, 500);
+
+        let widthers = pathTop[1].innerHTML;
+        let re = /768/gi;
+
+        Array.from(pathTop[1].children)[0].style.width = intViewportWidth;
+        Array.from(pathTop[1].children)[0].style.height = intViewportHeight;
+        // widthers = widthers.replace(re, intViewportWidth);
+
+        console.log(Array.from(pathTop));
+
+        // const useCaseOne = document.getElementsByClassName("useCaseOne");
+
+        window.addEventListener("scroll", () => {
+            if ($(window).scrollTop() > 600) {
+                console.log("geht");
+            }
+        });
         // GET ABOUT GRID
         let Obj1 = aboutRow[0].childNodes;
         let Obj2 = aboutRow[1].childNodes;
@@ -46,6 +92,8 @@ document.addEventListener(
             console.log(dir);
             setTimeout(() => {
                 if (dir == "index.html") {
+                    home.classList.remove("animate__animated");
+                    home.classList.remove("animate__bounceOutDown");
                     about.style.display = "none";
                     clients.style.display = "none";
                     home.style.display = "block";
@@ -76,6 +124,17 @@ document.addEventListener(
             }, 100);
         });
 
+        var _getDistanceFromTop = function (selector) {
+            var scrollTop = $(window).scrollTop(),
+                elementOffset = selector.offset().top,
+                distance = elementOffset - scrollTop;
+            return distance;
+        };
+
+        clientsMenu.addEventListener("click", () => {
+            window.scrollTo(0, 0);
+        });
+
         function rowFade(row) {
             for (let i = 0; i < row.length; i++) {
                 setTimeout(function timer() {
@@ -96,9 +155,12 @@ document.addEventListener(
             row.map((e) => {
                 e.addEventListener("click", () => {
                     overlay.classList.remove("slide-out-left");
+                    overlay.classList.remove("fade-out");
                     popup.style.display = "block";
                     popup.classList.remove("hideSide");
-                    popup.classList.add("slide-in-right");
+                    popup.classList.add("animate__animated");
+                    popup.classList.add("animate__bounceInRight");
+                    // popup.classList.add("slide-in-right");
                     overlay.style.display = "block";
                     overlay.classList.add("show");
 
@@ -109,14 +171,16 @@ document.addEventListener(
 
         overlay.addEventListener("click", () => {
             if (event.target != popup) {
+                popup.classList.remove("animate__animated");
+                popup.classList.remove("animate__bounceInRight");
                 popup.classList.remove("slide-in-right");
                 popup.classList.add("hideSide");
-                overlay.classList.add("slide-out-left");
+                popup.classList.add("slide-out-right");
+                overlay.classList.add("fade-out");
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 500);
             }
-        });
-
-        document.body.addEventListener("click", () => {
-            console.log(event.target);
         });
 
         clickRow(rowOne);
@@ -140,10 +204,14 @@ document.addEventListener(
                 window.history.pushState("object or string", "About", "/about");
 
                 href = window.location.href;
+                Array.from(scroller).map((e) =>
+                    e.classList.remove("scrollSnap")
+                );
                 logo.classList.remove("scale-out-center");
                 btnL.classList.add("heartbeat");
                 setTimeout(() => {
-                    home.classList.add("slide-out-bottom");
+                    home.classList.add("animate__animated");
+                    home.classList.add("animate__bounceOutDown");
                     clients.classList.add("slide-out-right");
                     about.classList.add("slide-in-left");
                 }, 100);
@@ -157,6 +225,7 @@ document.addEventListener(
                     // rowFade(rowTwo);
                     // rowFade(rowThree);
                     about.style.display = "block";
+                    frontPathKreis.style.display = "none";
                 }, 650);
                 setTimeout(() => {
                     logo.classList.add("scale-in-center");
@@ -176,6 +245,7 @@ document.addEventListener(
 
         function clientsT(trigger) {
             trigger.addEventListener("click", () => {
+                window.scrollTo(0, 0);
                 window.history.pushState(
                     "object or string",
                     "Clients",
@@ -184,7 +254,8 @@ document.addEventListener(
                 logo.classList.remove("scale-out-center");
                 btnR.classList.add("heartbeat");
                 setTimeout(() => {
-                    home.classList.add("slide-out-bottom");
+                    home.classList.add("animate__animated");
+                    home.classList.add("animate__bounceOutDown");
                     about.classList.add("slide-out-left");
                 }, 100);
                 setTimeout(() => {
@@ -195,19 +266,21 @@ document.addEventListener(
                     clients.style.display = "block";
                     clients.classList.add("slide-in-right");
                     about.style.display = "none";
+                    frontPathKreis.style.display = "none";
                 }, 650);
                 setTimeout(() => {
                     logo.classList.add("scale-in-center");
                     naviRow.classList.add("shadow");
                     about.classList.remove("slide-out-left");
+                    Array.from(scroller).map((e) =>
+                        e.classList.add("scrollSnap")
+                    );
                 }, 800);
             });
         }
 
         clientsT(btnR);
         clientsT(clientsMenu);
-
-        console.log();
 
         // btnL.addEventListener("click", () => {
         //     console.log("gehts");
