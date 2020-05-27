@@ -16,9 +16,12 @@
 
 $primary-color: #f8951d;
 $yellowish: #fdb02e;
-$text-color: #353c43;
+$text-color: #2d3032;
 $light-grey: #9a9a9a;
-$light-blue: #c1c7cc;
+$light-blue: #c1c1c9;
+$purple: #925e78;
+
+$label: #78787f;
 $white: #fff;
 
 $font-bold: "pantonextrabold";
@@ -97,6 +100,29 @@ h3 {
     margin-top: 1rem;
 }
 
+h4 {
+    font-family: $font-bold;
+    color: $white;
+}
+
+.bold {
+    // font-weight: 700;
+    font-family: $font-text;
+    font-size: 0.85rem;
+}
+
+.contrast {
+    filter: contrast(0.5);
+    margin-right: 1rem;
+    width: 1rem;
+}
+
+.icon {
+    width: 1.75rem;
+    display: inline-block;
+    color: $primary-color;
+}
+
 #h1R {
     margin-bottom: 2.5rem;
 }
@@ -140,6 +166,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // padding-bottom: 8rem;
 }
 
 .frontPath {
@@ -149,8 +176,8 @@ p {
 .frontPathKreis {
     position: absolute;
     left: 50%;
-    top: -30%;
     z-index: -2;
+    top: 4rem;
 }
 
 .strich {
@@ -162,7 +189,7 @@ p {
 
 .underline {
     font-family: $font-text;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
 }
 
 p,
@@ -176,8 +203,9 @@ p,
 
 #naviRow {
     height: 4rem;
-    position: absolute;
+    position: fixed;
     z-index: 10;
+    background: $white;
     .row {
         min-height: 4rem;
     }
@@ -197,7 +225,7 @@ p,
 }
 
 .bgText {
-    background: $yellowish;
+    // background: $yellowish;
 }
 
 .next {
@@ -236,7 +264,7 @@ p,
 }
 
 #popup {
-    position: absolute;
+    position: fixed;
     width: 20rem;
     min-height: 10rem;
     background-color: white;
@@ -289,7 +317,7 @@ p,
     div {
         cursor: pointer;
         img {
-            height: 4rem;
+            height: 3rem;
         }
     }
 }
@@ -323,6 +351,20 @@ p,
     opacity: 0.5;
 }
 
+.pathTop {
+    position: relative;
+    top: 2px;
+}
+
+.pathBottom {
+    position: relative;
+    top: -2px;
+}
+
+.legende {
+    min-height: 35rem;
+}
+
 .mb-6 {
     margin-bottom: 6rem;
 }
@@ -353,7 +395,88 @@ p,
     display: none;
 }
 
+#contactSection {
+    display: none;
+    h2 {
+        // color: $white;
+        margin-bottom: 3rem;
+    }
+
+    // input[type="checkbox"] {
+    //     display: none;
+    // }
+    // input[type="checkbox"] + label::before {
+    //     width: 15px;
+    //     height: 15px;
+    //     border-radius: 15px;
+    //     border: 2px solid #8cad2d;
+    //     background-color: #fff;
+    //     display: block;
+    //     content: "";
+    //     float: left;
+    //     margin-right: 5px;
+    // }
+    // input[type="checkbox"]:checked + label::before {
+    //     box-shadow: inset 0px 0px 0px 3px #fff;
+    //     background-color: #8cad2d;
+    // }
+
+    .vh100Container {
+        padding-bottom: 4rem;
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: solid thin $label;
+        color: $text-color;
+        padding: 0.5rem 0;
+        width: 80%;
+    }
+
+    ::placeholder {
+        color: $light-grey;
+    }
+
+    .bgDark {
+        background: $text-color;
+        color: $light-blue;
+    }
+
+    .checkbox {
+        width: auto;
+    }
+    button {
+        display: block;
+        width: 100%;
+        background: $purple;
+        border: none;
+        padding: 1rem;
+        color: white;
+    }
+
+    textarea {
+        width: 100%;
+        background: none;
+        border: none;
+    }
+}
+
+#contactRight {
+    border-left: solid thin $label;
+    padding-left: 2rem;
+
+    label {
+        margin-top: 0;
+    }
+}
+
 .btns:hover {
+}
+
+#logoContact {
+    filter: grayscale(1);
+    width: 66%;
 }
 
 #h1L {
@@ -364,6 +487,13 @@ p,
 #h1R {
     transform: translateX(1000px);
     opacity: 0;
+}
+
+label {
+    color: $label;
+    display: block;
+    margin-top: 1.75rem;
+    font-size: 0.75rem;
 }
 
 #footer {
@@ -390,11 +520,11 @@ p,
 }
 
 .slide-in-right {
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-in-left {
-    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .heartbeat {
@@ -408,30 +538,30 @@ p,
 
 .scale-in-center {
     visibility: visible;
-    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .scale-out-center {
     visibility: visible;
-    animation: scale-out-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-out-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-out-right {
-    -webkit-animation: slide-out-right 0.5s
+    -webkit-animation: slide-out-right 0.3s
         cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-out-right 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .slide-out-left {
-    -webkit-animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    -webkit-animation: slide-out-left 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
         both;
-    animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-out-left 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .slide-out-bottom {
-    -webkit-animation: slide-out-bottom 0.5s
+    -webkit-animation: slide-out-bottom 0.3s
         cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-out-bottom 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .fade-out {

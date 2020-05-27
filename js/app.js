@@ -10,6 +10,7 @@ document.addEventListener(
         const about = document.getElementById("aboutSection");
         const aboutMenu = document.getElementById("about");
         const clientsMenu = document.getElementById("clients");
+        const contactMenu = document.getElementById("contact");
         const clients = document.getElementById("clientSection");
         const naviRow = document.getElementById("naviRow");
         const aboutRow = document.getElementsByClassName("aboutgrid");
@@ -27,6 +28,7 @@ document.addEventListener(
         const pathBottom = Array.from(
             document.getElementsByClassName("pathBottom")
         );
+        const contact = document.getElementById("contactSection");
 
         let intViewportWidth = window.innerWidth;
         let intViewportHeight = window.innerWidth / 6.699992148446701;
@@ -231,10 +233,10 @@ document.addEventListener(
                     logo.classList.add("scale-in-center");
                     naviRow.classList.add("shadow");
                     clients.classList.remove("slide-out-right");
-                }, 800);
+                }, 700);
                 setTimeout(() => {
                     about.classList.remove("slide-in-left");
-                }, 1500);
+                }, 1000);
             });
         }
 
@@ -275,12 +277,52 @@ document.addEventListener(
                     Array.from(scroller).map((e) =>
                         e.classList.add("scrollSnap")
                     );
-                }, 800);
+                }, 700);
             });
         }
 
         clientsT(btnR);
         clientsT(clientsMenu);
+
+        // COONTACT BUTTON
+        function contactsT(trigger) {
+            trigger.addEventListener("click", () => {
+                window.scrollTo(0, 0);
+                window.history.pushState(
+                    "object or string",
+                    "Clients",
+                    "/clients"
+                );
+                logo.classList.remove("scale-out-center");
+                btnR.classList.add("heartbeat");
+                setTimeout(() => {
+                    home.classList.add("animate__animated");
+                    home.classList.add("animate__bounceOutDown");
+                    about.classList.add("slide-out-left");
+                }, 100);
+                setTimeout(() => {
+                    home.style.display = "none";
+                    home.classList.remove("hMain");
+                    // home.children[0].remove("hMain");
+                    logo.classList.add("scale-in-center");
+                    clients.style.display = "none";
+                    contact.style.display = "block";
+                    contact.classList.add("slide-in-right");
+                    about.style.display = "none";
+                    frontPathKreis.style.display = "none";
+                }, 650);
+                setTimeout(() => {
+                    logo.classList.add("scale-in-center");
+                    naviRow.classList.add("shadow");
+                    about.classList.remove("slide-out-left");
+                    Array.from(scroller).map((e) =>
+                        e.classList.add("scrollSnap")
+                    );
+                }, 700);
+            });
+        }
+
+        contactsT(contactMenu);
 
         // btnL.addEventListener("click", () => {
         //     console.log("gehts");
