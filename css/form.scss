@@ -1,0 +1,13 @@
+.error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.success {
+    color: green;
+    display: block;
+    margin-top: 0.5rem;
+    transition: all ease-in-out 500ms;
+    font-size: 1.25rem;
+}
