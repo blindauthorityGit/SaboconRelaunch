@@ -17,6 +17,10 @@
   color: #c1c1c9;
 }
 
+.whiteBg {
+  background: #fff;
+}
+
 html {
   height: 100%;
 }
@@ -27,8 +31,16 @@ html {
 
 .orange {
   background: #f8951d;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f8951d), to(#f8751d));
-  background: linear-gradient(180deg, #f8951d 0%, #f8751d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8951d), color-stop(175%, #f8751d));
+  background: linear-gradient(180deg, #f8951d 0%, #f8751d 175%);
+}
+
+.bgWhole {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 70%;
 }
 
 .light {
@@ -304,6 +316,8 @@ p,
 
 .aboutgrid div img {
   height: 3rem;
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
 }
 
 .txtWrapper {
@@ -893,6 +907,24 @@ label {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 0%;
   }
 }
 /*# sourceMappingURL=main.css.map */

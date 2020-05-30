@@ -30,6 +30,7 @@ document.addEventListener(
         );
         const contact = document.getElementById("contactSection");
         const frontPathTablet = document.getElementById("frontPathTablet");
+        const bgWhole = document.getElementById("bgWhole");
 
         // Responisve Width for SVG Topper and Bottom
 
@@ -214,8 +215,10 @@ document.addEventListener(
                 setTimeout(() => {
                     home.classList.add("animate__animated");
                     home.classList.add("animate__bounceOutDown");
-                    frontPathTablet.classList.add("animate__animated");
-                    frontPathTablet.classList.add("animate__bounceOutUp");
+                    // frontPathTablet.classList.add("animate__animated");
+                    // frontPathTablet.classList.add("animate__bounceOutUp");
+                    bgWhole.classList.add("animate__animated");
+                    bgWhole.classList.add("animate__bounceOutUp");
                     clients.classList.add("slide-out-right");
                     contact.classList.add("slide-out-right");
                     about.classList.add("slide-in-left");
