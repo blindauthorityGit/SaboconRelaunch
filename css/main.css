@@ -210,6 +210,7 @@ p {
 .underline {
   font-family: "Roboto", serif;
   font-size: 0.75rem;
+  text-align: center;
 }
 
 p,

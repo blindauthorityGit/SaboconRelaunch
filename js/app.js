@@ -52,6 +52,12 @@ document.addEventListener(
             "events.svg",
         ];
 
+        // Padding for Grid Icons
+
+        Array.from(aboutRow[0].children).map((e) => {
+            e.classList.add("pb-3");
+        });
+
         // Responisve Width for SVG Topper and Bottom
 
         let intViewportWidth = window.innerWidth;
@@ -116,11 +122,11 @@ document.addEventListener(
         });
         // GET ABOUT GRID
         let Obj1 = aboutRow[0].childNodes;
-        let Obj2 = aboutRow[1].childNodes;
-        let Obj3 = aboutRow[2].childNodes;
+        // let Obj2 = aboutRow[1].childNodes;
+        // let Obj3 = aboutRow[2].childNodes;
         let rowOne = Object.values(Obj1).filter((e) => e.nodeName != "#text");
-        let rowTwo = Object.values(Obj2).filter((e) => e.nodeName != "#text");
-        let rowThree = Object.values(Obj3).filter((e) => e.nodeName != "#text");
+        // let rowTwo = Object.values(Obj2).filter((e) => e.nodeName != "#text");
+        // let rowThree = Object.values(Obj3).filter((e) => e.nodeName != "#text");
 
         // Get URL
         let href = window.location.href;
@@ -235,8 +241,8 @@ document.addEventListener(
         });
 
         clickRow(rowOne);
-        clickRow(rowTwo);
-        clickRow(rowThree);
+        // clickRow(rowTwo);
+        // clickRow(rowThree);
 
         // STart Animations delay
 
