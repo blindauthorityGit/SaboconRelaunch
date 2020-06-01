@@ -1,8 +1,26 @@
-<svg id="musicians" xmlns="http://www.w3.org/2000/svg" width="56.74" height="73.773" viewBox="0 0 56.74 73.773">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_41" data-name="Pfad 41" d="M40.623,23.644c0,13.007-6.988,23.644-15.538,23.644S9.56,36.637,9.56,23.644,16.548,0,25.085,0,40.623,10.637,40.623,23.644Z" transform="translate(3.312)" fill="#f8951d"/>
-    <path id="Pfad_42" data-name="Pfad 42" d="M28.68,51.306C13.465,51.306,2.154,41.5,0,26.154l7.029-.983C8.685,36.913,16.979,44.2,28.68,44.2c11.23,0,19.47-7.944,21.018-20.2l7.042.889C54.748,40.683,43.478,51.306,28.68,51.306Z" transform="translate(0 8.315)" fill="#f8951d"/>
-    <rect id="Rechteck_35" data-name="Rechteck 35" width="9.331" height="10.57" transform="translate(24.048 57.966)" fill="#f8951d"/>
-    <path id="Pfad_43" data-name="Pfad 43" d="M36.713,53.441c0,1.535-2.612,2.787-5.8,2.787H17.633c-3.2,0-5.8-1.252-5.8-2.787s2.612-2.8,5.8-2.8H30.909C34.1,50.64,36.713,51.892,36.713,53.441Z" transform="translate(4.099 17.545)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1506" data-name="Rechteck 1506" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="musicians" transform="translate(10503 -136)">
+    <g id="Gruppe_maskieren_127" data-name="Gruppe maskieren 127" transform="translate(1108 991)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="musicians-2" data-name="musicians" transform="translate(-10195 520)">
+      <g id="Calque_1" data-name="Calque 1">
+        <path id="Pfad_41" data-name="Pfad 41" d="M114.925,80.2c0,44.119-23.7,80.2-52.705,80.2S9.56,124.273,9.56,80.2,33.264,0,62.22,0,114.925,36.081,114.925,80.2Z" transform="translate(34.102)" fill="#fff"/>
+        <path id="Pfad_42" data-name="Pfad 42" d="M97.281,116.622C45.672,116.622,7.307,83.373,0,31.307l23.841-3.334C29.458,67.8,57.592,92.508,97.281,92.508c38.09,0,66.041-26.946,71.294-68.508l23.886,3.014C185.7,80.587,147.474,116.622,97.281,116.622Z" transform="translate(0 85.612)" fill="#fff"/>
+        <rect id="Rechteck_35" data-name="Rechteck 35" width="31.651" height="35.852" transform="translate(81.57 196.617)" fill="#fff"/>
+        <path id="Pfad_43" data-name="Pfad 43" d="M96.231,60.14c0,5.207-8.86,9.454-19.685,9.454H31.515c-10.87,0-19.685-4.247-19.685-9.454s8.86-9.5,19.685-9.5H76.547C87.371,50.64,96.231,54.887,96.231,60.14Z" transform="translate(42.2 180.642)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

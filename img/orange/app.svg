@@ -1,8 +1,26 @@
-<svg id="app" xmlns="http://www.w3.org/2000/svg" width="77" height="61.519" viewBox="0 0 77 61.519">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_26" data-name="Pfad 26" d="M72.648,0H4.364A4.376,4.376,0,0,0,0,4.364V57.155a4.376,4.376,0,0,0,4.364,4.364H72.648A4.376,4.376,0,0,0,77,57.155V4.364A4.376,4.376,0,0,0,72.648,0ZM19.619,5.945a3.4,3.4,0,1,1-2.412.992,3.412,3.412,0,0,1,2.412-.992Zm-10.4,0a3.412,3.412,0,1,1-3.4,3.341,3.412,3.412,0,0,1,3.4-3.341ZM71.2,54.48H5.8V15.742H71.2Z" fill="#f8951d"/>
-    <path id="Pfad_27" data-name="Pfad 27" d="M27.381,40.74,15.17,33.19v-2.7L27.381,23v3.888l-8.43,4.97,8.43,5.006Z" transform="translate(2.867 4.347)" fill="#f8951d"/>
-    <path id="Pfad_28" data-name="Pfad 28" d="M41.094,19.67,31.713,45.031H27.23l9.441-25.314Z" transform="translate(5.147 3.718)" fill="#f8951d"/>
-    <path id="Pfad_29" data-name="Pfad 29" d="M40.61,36.84,49.1,31.834l-8.489-4.97V23l12.211,7.491v2.7L40.61,40.74Z" transform="translate(7.676 4.347)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1496" data-name="Rechteck 1496" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="app" transform="translate(10503 612)">
+    <g id="Gruppe_maskieren_117" data-name="Gruppe maskieren 117" transform="translate(1108 243)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="app-2" data-name="app" transform="translate(-10235 -212)">
+      <g id="Calque_1" data-name="Calque 1">
+        <path id="Pfad_26" data-name="Pfad 26" d="M258.253,0H15.512A15.554,15.554,0,0,0,0,15.512V203.179a15.554,15.554,0,0,0,15.512,15.512H258.253a15.554,15.554,0,0,0,15.47-15.512V15.512A15.554,15.554,0,0,0,258.253,0ZM69.741,21.134a12.088,12.088,0,1,1-8.575,3.526,12.131,12.131,0,0,1,8.575-3.526Zm-36.984,0A12.131,12.131,0,1,1,20.669,33.011,12.131,12.131,0,0,1,32.757,21.134ZM253.1,193.669H20.626V55.962H253.1Z" fill="#fff"/>
+        <path id="Pfad_27" data-name="Pfad 27" d="M58.579,86.063,15.17,59.223V49.628L58.579,23V36.821L28.611,54.489,58.579,72.284Z" transform="translate(48.95 74.215)" fill="#fff"/>
+        <path id="Pfad_28" data-name="Pfad 28" d="M76.514,19.67,43.165,109.826H27.23L60.79,19.839Z" transform="translate(87.864 63.47)" fill="#fff"/>
+        <path id="Pfad_29" data-name="Pfad 29" d="M40.61,72.2,70.789,54.4,40.61,36.737V23L84.019,49.628v9.595L40.61,86.063Z" transform="translate(131.038 74.215)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

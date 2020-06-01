@@ -1,5 +1,23 @@
-<svg id="media" xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 77 77">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_39" data-name="Pfad 39" d="M38.5,0A38.5,38.5,0,1,0,77,38.5,38.5,38.5,0,0,0,38.5,0Zm4.675,38.5A4.675,4.675,0,1,1,38.5,33.825,4.675,4.675,0,0,1,43.175,38.5Zm5.57-7.634L62.526,20.448a29.885,29.885,0,0,1,4.748,9.365l-16.609,4.82a13.1,13.1,0,0,0-1.919-3.766ZM38.5,68.558A30.058,30.058,0,1,1,46.278,9.466l-4.084,16.8a12.511,12.511,0,0,0-3.694-.548A12.785,12.785,0,1,0,51.285,38.5v-.794L68.6,37.129V38.5A30.073,30.073,0,0,1,38.5,68.558Z" transform="translate(0 0)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1502" data-name="Rechteck 1502" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="media" transform="translate(8489 2276)">
+    <g id="Gruppe_maskieren_123" data-name="Gruppe maskieren 123" transform="translate(3122 -1421)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="media-2" data-name="media" transform="translate(-8172.64 -1854.64)">
+      <g id="Calque_1" data-name="Calque 1" transform="translate(-27.36 -27.36)">
+        <path id="Pfad_39" data-name="Pfad 39" d="M115.18,0A115.18,115.18,0,1,0,230.36,115.18,115.18,115.18,0,0,0,115.18,0Zm13.987,115.18a13.987,13.987,0,1,1-13.987-13.987,13.987,13.987,0,0,1,13.987,13.987Zm16.664-22.837L187.06,61.173a89.406,89.406,0,0,1,14.2,28.018l-49.69,14.419a39.2,39.2,0,0,0-5.742-11.268ZM115.18,205.105A89.925,89.925,0,1,1,138.449,28.32L126.232,78.571a37.429,37.429,0,0,0-11.052-1.64,38.249,38.249,0,1,0,38.249,38.249v-2.374l51.805-1.727v4.1a89.968,89.968,0,0,1-90.055,89.925Z" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

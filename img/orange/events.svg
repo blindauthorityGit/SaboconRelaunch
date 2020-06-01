@@ -1,10 +1,28 @@
-<svg id="events" xmlns="http://www.w3.org/2000/svg" width="67.565" height="73.583" viewBox="0 0 67.565 73.583">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_44" data-name="Pfad 44" d="M67.565,0H0V73.583H67.565ZM7.872,66.182V7.4H59.694V66.182Z" fill="#f8951d"/>
-    <rect id="Rechteck_36" data-name="Rechteck 36" width="11.565" height="12.492" transform="translate(47.9 15.273) rotate(90)" fill="#f8951d"/>
-    <rect id="Rechteck_37" data-name="Rechteck 37" width="11.565" height="12.492" transform="translate(47.9 31.002) rotate(90)" fill="#f8951d"/>
-    <rect id="Rechteck_38" data-name="Rechteck 38" width="11.565" height="12.492" transform="translate(30.075 15.515) rotate(90)" fill="#f8951d"/>
-    <rect id="Rechteck_39" data-name="Rechteck 39" width="11.565" height="12.492" transform="translate(30.075 31.244) rotate(90)" fill="#f8951d"/>
-    <rect id="Rechteck_40" data-name="Rechteck 40" width="11.565" height="12.492" transform="translate(30.089 46.517) rotate(90)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1505" data-name="Rechteck 1505" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="events" transform="translate(7538 650)">
+    <g id="Gruppe_maskieren_126" data-name="Gruppe maskieren 126" transform="translate(4073 205)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="events-2" data-name="events" transform="translate(-7240 -257)">
+      <g id="Calque_1" data-name="Calque 1">
+        <path id="Pfad_44" data-name="Pfad 44" d="M213.888,0H0V232.938H213.888ZM24.919,209.509V23.429h164.05v186.08Z" fill="#fff"/>
+        <rect id="Rechteck_36" data-name="Rechteck 36" width="36.611" height="39.545" transform="translate(151.636 48.348) rotate(90)" fill="#fff"/>
+        <rect id="Rechteck_37" data-name="Rechteck 37" width="36.611" height="39.545" transform="translate(151.636 98.141) rotate(90)" fill="#fff"/>
+        <rect id="Rechteck_38" data-name="Rechteck 38" width="36.611" height="39.545" transform="translate(95.207 49.116) rotate(90)" fill="#fff"/>
+        <rect id="Rechteck_39" data-name="Rechteck 39" width="36.611" height="39.545" transform="translate(95.207 98.908) rotate(90)" fill="#fff"/>
+        <rect id="Rechteck_40" data-name="Rechteck 40" width="36.611" height="39.545" transform="translate(95.252 147.257) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

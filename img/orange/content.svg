@@ -1,10 +1,28 @@
-<svg id="content" xmlns="http://www.w3.org/2000/svg" width="77.18" height="77.35" viewBox="0 0 77.18 77.35">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_30" data-name="Pfad 30" d="M0,0V53.742a6.091,6.091,0,0,0,5.756,6.389H71.409a6.091,6.091,0,0,0,5.756-6.389V0ZM71.5,48.1a5.21,5.21,0,0,1-4.962,5.459H10.584A5.21,5.21,0,0,1,5.621,48.1V12.48H71.5Z" transform="translate(0.006)" fill="#f8951d"/>
-    <path id="Pfad_31" data-name="Pfad 31" d="M51.55,61.865,36.117,46.42a1.935,1.935,0,0,0-1.514-.558h-.223a1.91,1.91,0,0,0-1.514.558L17.434,61.865a1.985,1.985,0,0,0,2.8,2.779L32.507,52.374V64.333a1.985,1.985,0,0,0,3.97,0V52.4L48.747,64.644a1.973,1.973,0,0,0,2.8,0,2,2,0,0,0,0-2.779Z" transform="translate(4.097 11.032)" fill="#f8951d"/>
-    <path id="Pfad_32" data-name="Pfad 32" d="M22.057,29.025,35.207,27.2A12.952,12.952,0,1,0,30.53,39.135Z" transform="translate(2.278 3.876)" fill="#f8951d"/>
-    <rect id="Rechteck_23" data-name="Rechteck 23" width="22.715" height="2.469" transform="translate(42.957 25.581)" fill="#f8951d"/>
-    <rect id="Rechteck_24" data-name="Rechteck 24" width="22.715" height="2.469" transform="translate(42.981 32.057)" fill="#f8951d"/>
-    <rect id="Rechteck_25" data-name="Rechteck 25" width="14.465" height="2.456" transform="translate(42.981 38.545)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1501" data-name="Rechteck 1501" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="content" transform="translate(9496 2276)">
+    <g id="Gruppe_maskieren_122" data-name="Gruppe maskieren 122" transform="translate(2115 -1421)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="content-2" data-name="content" transform="translate(-9188 -1863.918)">
+      <g id="Calque_1" data-name="Calque 1">
+        <path id="Pfad_30" data-name="Pfad 30" d="M.017,0V160.307a18.17,18.17,0,0,0,17.17,19.058H213.02a18.17,18.17,0,0,0,17.171-19.058V0ZM213.279,143.47a15.542,15.542,0,0,1-14.8,16.282H31.583a15.542,15.542,0,0,1-14.8-16.282V37.227h196.5Z" transform="translate(0.006)" fill="#fff"/>
+        <path id="Pfad_31" data-name="Pfad 31" d="M120.062,93.611,74.027,47.539a5.773,5.773,0,0,0-4.515-1.665h-.666a5.7,5.7,0,0,0-4.515,1.665L18.3,93.611A5.921,5.921,0,0,0,26.66,101.9l36.6-36.6v35.673a5.921,5.921,0,0,0,11.842,0v-35.6L111.7,101.9a5.884,5.884,0,0,0,8.363,0A5.958,5.958,0,0,0,120.062,93.611Z" transform="translate(45.931 123.832)" fill="#fff"/>
+        <path id="Pfad_32" data-name="Pfad 32" d="M47.081,54.634l39.226-5.44a38.634,38.634,0,1,0-13.951,35.6Z" transform="translate(25.51 43.504)" fill="#fff"/>
+        <rect id="Rechteck_23" data-name="Rechteck 23" width="67.757" height="7.364" transform="translate(128.136 76.305)" fill="#fff"/>
+        <rect id="Rechteck_24" data-name="Rechteck 24" width="67.757" height="7.364" transform="translate(128.21 95.622)" fill="#fff"/>
+        <rect id="Rechteck_25" data-name="Rechteck 25" width="43.148" height="7.327" transform="translate(128.21 114.976)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

@@ -1,13 +1,31 @@
-<svg id="soundengine" xmlns="http://www.w3.org/2000/svg" width="77" height="74.113" viewBox="0 0 77 74.113">
-  <g id="Calque_1" data-name="Calque 1">
-    <rect id="Rechteck_26" data-name="Rechteck 26" width="11.404" height="14.625" transform="translate(31.862 59.477)" fill="#f8951d"/>
-    <rect id="Rechteck_27" data-name="Rechteck 27" width="11.392" height="14.183" transform="translate(3.209)" fill="#f8951d"/>
-    <rect id="Rechteck_28" data-name="Rechteck 28" width="11.404" height="41.977" transform="translate(31.862)" fill="#f8951d"/>
-    <rect id="Rechteck_29" data-name="Rechteck 29" width="11.392" height="42.419" transform="translate(3.209 31.683)" fill="#f8951d"/>
-    <rect id="Rechteck_30" data-name="Rechteck 30" width="11.404" height="32.625" transform="translate(62.387 41.488)" fill="#f8951d"/>
-    <rect id="Rechteck_31" data-name="Rechteck 31" width="11.404" height="24.633" transform="translate(62.387)" fill="#f8951d"/>
-    <rect id="Rechteck_32" data-name="Rechteck 32" width="17.81" height="9.4" transform="translate(0 18.012)" fill="#f8951d"/>
-    <rect id="Rechteck_33" data-name="Rechteck 33" width="17.81" height="9.4" transform="translate(28.653 46.379)" fill="#f8951d"/>
-    <rect id="Rechteck_34" data-name="Rechteck 34" width="17.81" height="9.4" transform="translate(59.19 28.211)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1504" data-name="Rechteck 1504" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="soundengine" transform="translate(8489 650)">
+    <g id="Gruppe_maskieren_125" data-name="Gruppe maskieren 125" transform="translate(3122 205)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="soundengine-2" data-name="soundengine" transform="translate(-8190 -243)">
+      <g id="Calque_1" data-name="Calque 1">
+        <rect id="Rechteck_26" data-name="Rechteck 26" width="31.299" height="40.138" transform="translate(87.446 163.237)" fill="#fff"/>
+        <rect id="Rechteck_27" data-name="Rechteck 27" width="31.266" height="38.927" transform="translate(8.807)" fill="#fff"/>
+        <rect id="Rechteck_28" data-name="Rechteck 28" width="31.299" height="115.209" transform="translate(87.446)" fill="#fff"/>
+        <rect id="Rechteck_29" data-name="Rechteck 29" width="31.266" height="116.42" transform="translate(8.807 86.955)" fill="#fff"/>
+        <rect id="Rechteck_30" data-name="Rechteck 30" width="31.299" height="89.541" transform="translate(171.225 113.866)" fill="#fff"/>
+        <rect id="Rechteck_31" data-name="Rechteck 31" width="31.299" height="67.606" transform="translate(171.225)" fill="#fff"/>
+        <rect id="Rechteck_32" data-name="Rechteck 32" width="48.879" height="25.798" transform="translate(0 49.436)" fill="#fff"/>
+        <rect id="Rechteck_33" data-name="Rechteck 33" width="48.879" height="25.798" transform="translate(78.639 127.289)" fill="#fff"/>
+        <rect id="Rechteck_34" data-name="Rechteck 34" width="48.879" height="25.798" transform="translate(162.451 77.428)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

@@ -8,6 +8,9 @@
     h1 {
         font-size: 2rem;
     }
+    h2 {
+        font-size: 1.75rem;
+    }
     .posR {
         right: -2rem;
     }
@@ -59,10 +62,10 @@
     }
     #logoBig img {
         position: absolute;
-        top: 9rem;
+        top: 50%;
         z-index: 2;
         /* left: 20px; */
-        width: 45%;
+        width: 40%;
     }
 
     #logoBig {
@@ -71,6 +74,7 @@
 
     .link {
         font-size: 0.85rem;
+        font-weight: 600;
     }
 
     #naviRow > .row {
@@ -87,7 +91,7 @@
         font-size: 2rem;
     }
     .imgWrapper img {
-        width: 100%;
+        width: 80%;
     }
     #naviRow {
         position: fixed;
@@ -169,7 +173,7 @@
         font-size: 0.85rem;
     }
     .useCaseOne {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         font-size: 1.75rem;
     }
     .frontPath {

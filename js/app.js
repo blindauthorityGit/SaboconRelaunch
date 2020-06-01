@@ -31,16 +31,37 @@ document.addEventListener(
         const contact = document.getElementById("contactSection");
         const frontPathTablet = document.getElementById("frontPathTablet");
         const bgWhole = document.getElementById("bgWhole");
+        const popupHeadline = document.getElementById("popupHeadline");
+        const popupImg = document.getElementById("popupImg");
+
+        const imgs = [
+            "cloud.svg",
+            "wifi.svg",
+            "internet.svg",
+            "store.svg",
+            "crm.svg",
+            "app.svg",
+            "content.svg",
+            "social.svg",
+            "licence.svg",
+            "design.svg",
+            "media.svg",
+            "sound.svg",
+            "soundengine.svg",
+            "musicians.svg",
+            "events.svg",
+        ];
 
         // Responisve Width for SVG Topper and Bottom
 
         let intViewportWidth = window.innerWidth;
-        let intViewportHeight = window.innerWidth / 6.699992148446701;
+        let intViewportHeight = window.innerWidth / 6.9818181818181;
+        let intViewportHeightBottom = intViewportWidth / 6.9818181818181;
 
         setInterval(() => {
             intViewportWidth = window.innerWidth;
-            intViewportHeight = intViewportWidth / 6.699992148446701;
-            intViewportHeightBottom = intViewportWidth / 7.47445;
+            intViewportHeight = intViewportWidth / 6.9818181818181;
+            intViewportHeightBottom = intViewportWidth / 6.9818181818181;
 
             Array.from(pathTop[0].children)[0].style.width = intViewportWidth;
             Array.from(pathTop[0].children)[0].style.height = intViewportHeight;
@@ -48,19 +69,45 @@ document.addEventListener(
             Array.from(pathTop[1].children)[0].style.width = intViewportWidth;
             Array.from(pathTop[1].children)[0].style.height = intViewportHeight;
 
+            // Array.from(pathTop[2].children)[0].style.width = intViewportWidth;
+            // Array.from(pathTop[2].children)[0].style.height = intViewportHeight;
+
             Array.from(
                 pathBottom[0].children
             )[0].style.width = intViewportWidth;
             Array.from(
                 pathBottom[0].children
             )[0].style.height = intViewportHeightBottom;
+
+            Array.from(
+                pathBottom[1].children
+            )[0].style.width = intViewportWidth;
+            Array.from(
+                pathBottom[1].children
+            )[0].style.height = intViewportHeightBottom;
         }, 500);
+
+        console.log(pathBottom);
+        console.log(pathBottom);
 
         let widthers = pathTop[1].innerHTML;
         let re = /768/gi;
 
+        Array.from(pathTop[0].children)[0].style.width = intViewportWidth;
+        Array.from(pathTop[0].children)[0].style.height = intViewportHeight;
+
         Array.from(pathTop[1].children)[0].style.width = intViewportWidth;
         Array.from(pathTop[1].children)[0].style.height = intViewportHeight;
+
+        Array.from(pathBottom[0].children)[0].style.width = intViewportWidth;
+        Array.from(
+            pathBottom[0].children
+        )[0].style.height = intViewportHeightBottom;
+
+        Array.from(pathBottom[1].children)[0].style.width = intViewportWidth;
+        Array.from(
+            pathBottom[1].children
+        )[0].style.height = intViewportHeightBottom;
 
         window.addEventListener("scroll", () => {
             if ($(window).scrollTop() > 600) {
@@ -166,7 +213,9 @@ document.addEventListener(
                     overlay.style.display = "block";
                     overlay.classList.add("show");
 
-                    console.log(e.children[1].innerHTML);
+                    console.log(e.id);
+                    popupHeadline.innerHTML = e.children[1].innerHTML;
+                    popupImg.src = "./SaboconRelaunch/img/orange/" + imgs[e.id];
                 });
             });
         }
@@ -181,7 +230,7 @@ document.addEventListener(
                 overlay.classList.add("fade-out");
                 setTimeout(() => {
                     overlay.style.display = "none";
-                }, 500);
+                }, 450);
             }
         });
 

@@ -1,10 +1,10 @@
 <svg id="events" xmlns="http://www.w3.org/2000/svg" width="67.565" height="73.583" viewBox="0 0 67.565 73.583">
   <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_44" data-name="Pfad 44" d="M67.565,0H0V73.583H67.565ZM7.872,66.182V7.4H59.694V66.182Z" fill="#c2c2ca"/>
-    <rect id="Rechteck_36" data-name="Rechteck 36" width="11.565" height="12.492" transform="translate(47.9 15.273) rotate(90)" fill="#c2c2ca"/>
-    <rect id="Rechteck_37" data-name="Rechteck 37" width="11.565" height="12.492" transform="translate(47.9 31.002) rotate(90)" fill="#c2c2ca"/>
-    <rect id="Rechteck_38" data-name="Rechteck 38" width="11.565" height="12.492" transform="translate(30.075 15.515) rotate(90)" fill="#c2c2ca"/>
-    <rect id="Rechteck_39" data-name="Rechteck 39" width="11.565" height="12.492" transform="translate(30.075 31.244) rotate(90)" fill="#c2c2ca"/>
-    <rect id="Rechteck_40" data-name="Rechteck 40" width="11.565" height="12.492" transform="translate(30.089 46.517) rotate(90)" fill="#c2c2ca"/>
+    <path id="Pfad_44" data-name="Pfad 44" d="M67.565,0H0V73.583H67.565ZM7.872,66.182V7.4H59.694V66.182Z" fill="#ededed"/>
+    <rect id="Rechteck_36" data-name="Rechteck 36" width="11.565" height="12.492" transform="translate(47.9 15.273) rotate(90)" fill="#ededed"/>
+    <rect id="Rechteck_37" data-name="Rechteck 37" width="11.565" height="12.492" transform="translate(47.9 31.002) rotate(90)" fill="#ededed"/>
+    <rect id="Rechteck_38" data-name="Rechteck 38" width="11.565" height="12.492" transform="translate(30.075 15.515) rotate(90)" fill="#ededed"/>
+    <rect id="Rechteck_39" data-name="Rechteck 39" width="11.565" height="12.492" transform="translate(30.075 31.244) rotate(90)" fill="#ededed"/>
+    <rect id="Rechteck_40" data-name="Rechteck 40" width="11.565" height="12.492" transform="translate(30.089 46.517) rotate(90)" fill="#ededed"/>
   </g>
 </svg>

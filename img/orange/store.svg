@@ -1,7 +1,25 @@
-<svg id="store" xmlns="http://www.w3.org/2000/svg" width="75.995" height="67.31" viewBox="0 0 75.995 67.31">
-  <g id="Calque_1" data-name="Calque 1">
-    <path id="Pfad_20" data-name="Pfad 20" d="M28.39,54.67A6.32,6.32,0,1,1,22.08,61a6.32,6.32,0,0,1,6.31-6.33Z" transform="translate(0 0)" fill="#f8951d"/>
-    <path id="Pfad_21" data-name="Pfad 21" d="M56,54.67a6.32,6.32,0,1,1-4.5,1.84A6.32,6.32,0,0,1,56,54.67Z" transform="translate(0 0)" fill="#f8951d"/>
-    <path id="Pfad_22" data-name="Pfad 22" d="M72.05,20.05H22.86a3.07,3.07,0,0,0-2.3,3.05c0,2.54-2.8,3.27-2.8,3.27H68l-2,6.65H24a2.87,2.87,0,0,0-2.15,2.84A3.24,3.24,0,0,0,24,38.92H64.31l-1.84,6.21H27L24.64,26.37l-.76-6.32s-.69-5.85-1.08-8.26S16.36,6.33,3.33.19C.26-1.1-2.3,4.51,3.33,7.44l10.27,4.8s2.39,1.39,2.6,3.25,4.37,32.78,4.37,32.78.17,4.3,4.08,4.3h39.2c3.28,0,3.92-3.43,3.92-3.43l7.77-23.07S77.85,20.05,72.05,20.05Z" transform="translate(0 0)" fill="#f8951d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809" height="1018" viewBox="0 0 809 1018">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rechteck_1498" data-name="Rechteck 1498" d="M0,0H809a0,0,0,0,1,0,0V793a225,225,0,0,1-225,225H178A178,178,0,0,1,0,840V0A0,0,0,0,1,0,0Z" transform="translate(-11611 -855)" fill="#353a40"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8951d"/>
+      <stop offset="1" stop-color="#f8751d"/>
+    </linearGradient>
+  </defs>
+  <g id="store" transform="translate(10503 2318)">
+    <g id="Gruppe_maskieren_119" data-name="Gruppe maskieren 119" transform="translate(1108 -1463)" clip-path="url(#clip-path)">
+      <g id="design" transform="translate(6592.914 -1783.583)">
+        <path id="Pfad_2120" data-name="Pfad 2120" d="M-1013.49,774.569c-188.884-72.248-556.683,265.558-638.888-3.706-47.283-154.878,207.67-423.515,385.862-535.6C-1103.983,133.02-906.874,164.4-931.04,364.968-952.261,541.061-686.34,899.7-1013.49,774.569Z" transform="translate(-16545.793 909.972)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="store-2" data-name="store" transform="translate(-10225 -1921)">
+      <g id="Calque_1" data-name="Calque 1">
+        <path id="Pfad_20" data-name="Pfad 20" d="M43.17,54.67A21.123,21.123,0,1,1,22.08,75.827,21.123,21.123,0,0,1,43.17,54.67Z" transform="translate(51.719 128.051)" fill="#fff"/>
+        <path id="Pfad_21" data-name="Pfad 21" d="M70.9,54.67a21.123,21.123,0,1,1-15.035,6.151A21.123,21.123,0,0,1,70.9,54.67Z" transform="translate(116.272 128.051)" fill="#fff"/>
+        <path id="Pfad_22" data-name="Pfad 22" d="M240.812,67.012H76.405a10.261,10.261,0,0,0-7.687,10.194c0,8.489-9.358,10.929-9.358,10.929H227.276l-6.685,22.226H80.215a9.592,9.592,0,0,0-7.186,9.492,10.829,10.829,0,0,0,7.186,10.227H214.943l-6.15,20.756H90.242l-7.888-62.7-2.54-21.123S77.508,47.459,76.2,39.4,54.68,21.156,11.131.634C.87-3.677-7.686,15.073,11.131,24.866L45.456,40.908s7.988,4.646,8.69,10.862,14.606,109.56,14.606,109.56S69.32,175.7,82.388,175.7H213.405c10.963,0,13.1-11.464,13.1-11.464l25.969-77.106S260.2,67.012,240.812,67.012Z" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>
